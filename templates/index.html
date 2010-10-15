@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Hounslow West Evangelical Church - Welcome...{% endblock %}
+
+{% block javascript %}
+	<script type='text/javascript'>
+	// <![CDATA[
+		$(document).ready(function(){
+			$(".tweet").tweet({
+				username: "hounslow_west",
+				join_text: "auto",
+				avatar_size: 0,
+				count: 3,
+				auto_join_text_default: "we said,",
+				auto_join_text_ed: "we",
+				auto_join_text_ing: "we were",
+				auto_join_text_reply: "we replied to",
+				auto_join_text_url: "we were checking out",
+				loading_text: "loading tweets..."
+			});
+		});
+	// ]]>
+	</script>
+{% endblock %}
+
+
+{% block content %}			
+			<div id="welcome">
+				<h2 class="front_page">Welcome...</h2>
+				<p>We are a group of people who gather to worship and serve Jesus Christ in the Hounslow West and Heathrow area. The congregation is made of people of all ages, and of many different backgrounds and nationalities.</p>
+				<p>We hope this web site will enable you to <a href="/about/">learn more about us</a> as a church, as well as learn more about our Lord and Saviour Jesus Christ.</p>
+			</div>
+			
+			<div id="slideshow">
+				<div class="active">
+					<img src="imgs/slide1.png" alt="image 1" />
+				</div>
+				<div>
+					<img src="imgs/slide2.gif" alt="image 2" />
+				</div>
+				<div>
+					<img src="imgs/slide3.png" alt="image 3" />
+				</div>
+				<div>
+					<img src="imgs/church_building.png" alt="Church building" />
+				</div>
+				<div>
+					<img src="imgs/table_outreach_bordered.png" alt="Tube table outreach" />
+				</div>
+				<div>
+					<img src="imgs/holiday_club_2010_bordered.png" alt="Holiday club 2010" />
+				</div>
+			</div> <!-- #slideshow -->
+			
+			<div id="secondary-content">
+				<div id="latest-sermon">
+					<h3>Latest sermons:</h3>
+					<h4>18 July, 2010</h4>
+					<ul>
+						<li>AM - Spiritual Care</li>
+						<li>PM - How To Go About Witnessing</li>
+					</ul>
+					<h4>11 July, 2010</h4>
+					<ul>
+						<li>AM - Prevailing Prayer</li>
+						<li>PM - How To Pray About Witnessing</li>
+					</ul>
+				</div> <!-- #latest-sermon -->
+			
+				<div id="notices">
+					<h3>Special notices:</h3>
+					<div class="tweet"></div>
+				</div> <!-- #notices -->
+			
+				<div id="this-week"> 
+					<h3>Upcoming events:</h3>
+					<ul>{% for event in events %}
+						<li>
+							<h4>{{ event.title }}</h4>
+							<p>{{ event.start_string }}, {{ event.where }}.</p>
+						</li>{% endfor %}
+					</ul>
+				</div> <!-- #this-week -->
+			</div> <!-- #secondary-content -->
+{% endblock %}
+	

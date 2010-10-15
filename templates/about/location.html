@@ -1,0 +1,41 @@
+{% extends "base_about.html" %}
+
+{% block javascript %}
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAZRpp5FxL3KK5NtSVaAtCzhSTjZhwHROHbiE9baUXai1JiPmajhStBBKBpFZrgg3BpFaUWn9YII6Gdg" type="text/javascript"></script>
+{% endblock %}
+
+{% block primary-content %}
+<h2>Where, how?</h2>
+
+<h3>Where are you located?</h3>
+               <p>Hounslow West Evangelical Church is located in west London, a  few miles east of Heathrow Airport. We are a few minutes walk from  Hounslow West tube station which is on the Piccadilly Line. The  M4 (junction 3) is about 5 to 10 minutes drive away (depending  on the traffic).</p>
+               <div id="map" style="border: 1px solid rgb(204, 204, 204); margin: 0.8em 0.8em 1em; overflow: hidden; width: 640px; height: 250px; background-color: rgb(255, 255, 255);"></div>
+
+                      <form action="http://maps.google.com/maps" method="get" id="rcc-form" target="_blank">
+                             <h4>Enter your address for directions:<br />
+
+                                           <input name="saddr" class="textcontact" id="saddr" value="" size="80" type="text" />
+                                           <input name="submit" class="button" value="Go" type="submit" />
+                                           <input name="daddr" value="22 Vicarage Farm Road, Hounslow, TW3 4NW" type="hidden" />
+                                           <input name="hl" value="en" type="hidden" />
+                             </h4>
+                             <p class="example">Example: 10 Downing Street, London, SW1A 2AA</p>
+
+                      </form>
+               
+			   <h3>How can I get there?</h3>
+               <h4>Getting to us by road</h4>
+               <p>Hounslow West Evangelical Church is in west London, and is  located approximately 2 miles from Junction 3 of the M4.  The map above shows where the church is located.</p>
+							<div style="float:right; display: block; margin: 0em 0.7em 0.7em 0.7em;">
+							<img src="/imgs/carpark.png" title="Car park" style="" />
+							<blockquote><em><span style="font-size: 75%;">HWEC car park</span></em></blockquote>
+							</div>
+							
+               <p> Please note that it is not possible to turn right into Vicarage  Farm Road from the eastbound carriageway of the A4 (Great West Road).  If approaching from the west, it is necessary to take the A3006  (Bath Road) at the junction of the A4, A3006 and A30, and then turn  left into Vicarage Farm Road at the first set of traffic lights.  The church is a couple of hundred yards down the road on the left  on the corner of Vicarage Farm Road and Renfrew Road.</p>
+               <p><strong>Note:</strong> on site car parking available for regular services. </p>
+
+               <h4>Reaching us by rail</h4>
+               <p> Hounslow West Evangelical Church is just a few hundred yards from  Hounslow West tube station on the Piccadilly Line. Turn right out  of the station, right again at the traffic lights into Vicarage Farm  Road (at the junction of Bath Road with Vicarage Farm Road and  Rosemary Avenue). The church is a couple of hundred yards down  the road on the left on the corner of Vicarage Farm Road and  Renfrew Road.</p>
+               <p><a href="#">Back to top &#8224;</a></p>
+
+{% endblock %}

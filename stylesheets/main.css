@@ -1,0 +1,434 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+/*	line-height: 1.1em; */
+}
+
+a:hover {
+	background-color: #069;
+	color: #fff !important;
+}
+a:link, a:visited {
+	color: #069;
+	text-decoration: none;
+}
+
+h4 {
+	margin-top: 0.5em;
+}
+
+p, blockquote {
+	font-size: 100%;
+}
+
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	background-image: url("../imgs/bg2.png");
+	background-repeat: repeat-x;
+	font-size: 100%;
+	background-color: #EFEFEF;
+	min-width: 1000px;
+	line-height: 1.4em;
+}
+
+form {
+	margin-bottom: 0.5em;
+}
+
+#container {
+	margin: 0 auto; 
+	width: 1000px;
+	min-width: 1000px;
+}
+
+	#container header {
+		margin-top: 2em;
+		margin-left: 1em;
+		margin-right: 1em;
+		width: auto;
+	}
+		#container header h1 a {
+			background-image: url("../imgs/logo.png");
+			display: block;
+			height: 89px;
+			width: 417px;
+			overflow: hidden;
+			text-indent: -5000px;
+		}
+		#container header blockquote {
+			margin-top: 0.8em;
+			margin-right: 2.5em;
+			float: right;
+			display: block;
+		} 
+		#container header blockquote p {
+			font-weight: bold;
+			line-height: 1.1em;
+			color: #fff;
+		} .indent {
+			padding-left: 3em;
+		} .ref {
+			padding-left: 9em;
+			font-size: 0.98em;
+			line-height: 1.2em !important;
+			font-weight: normal !important;
+		}
+	
+	#container nav {
+		padding-left: 1em;
+		display; block;
+		height: 4em;
+		background-image: url("../imgs/nav-rule.png");
+		background-position: 50% 80%;
+		background-repeat: no-repeat;
+	}	
+		#container nav ul#menu {
+			list-style: none outside;
+			font-size: 0.85em;
+			padding-top: 0.2em;
+			padding-left: 1.2em;
+		}
+		#container nav li {
+			display: block;
+			text-transform: uppercase;
+			float: left;
+			height: 1.8em;
+			margin-right: 2.5em;
+		}
+		nav li h2 a:link, nav li h2 a:visited {
+			margin-top: 0.1em;
+			padding: 0.4em 0.6em 0.4em 0.6em;
+			display: block;
+		}
+		nav li h2 a:hover {
+			padding: 0.4em 0.6em 0.4em 0.6em;
+			display: block;
+		}
+		
+		#container nav li.last {
+			margin-right: 0em !important;
+		}
+		nav li a:visited, nav li a:link {
+			/*border-top: 1px dashed #024181;*/
+			color: #fff;
+			text-decoration: none;
+		}
+		nav li a:hover {
+			/*border-top: 1px dashed #fff;
+			border-bottom: 1px dashed #fff;*/
+			background-color: #024181 !important;
+			color: #fff !important;
+		}
+		
+		ul#menu li {
+			display: inline;
+			position: relative;
+		}
+		ul#menu div {  
+			display: none;  
+		}  
+		ul#menu li.mega div {  
+			width: 18em;  
+			position: absolute;  
+			top: 1.6em;  
+			left: 0em;  
+		}
+		ul#menu li.hovering div {  
+			display: block;  
+		}
+		
+		ul#menu li.mega div {
+			text-transform: normal !important;
+			width: 15em;
+			position: absolute;
+			top: 0em;
+			left: 0em;
+			padding: 0.5em 1em 0em 1em;
+			background: #024181;
+			color: #fff;
+			margin-top: 3.5em;
+			line-height: 1.4em;
+			border-left: 0.6em solid #fff;
+			border-bottom: 0.1em solid #fff;
+			border-top: 0.1em solid #fff;
+			border-right: 0.1em solid #fff;
+		}
+
+		ul#menu li.hovering div {
+			display: block;
+			z-index: 11;
+		}
+
+		ul#menu li.mega div a {
+			color: #fff;
+			padding: 0;
+			background-color: #024181;
+			text-transform: none !important;
+			border-bottom: 1px solid #fff;
+		}
+
+		ul#menu li.mega div a:hover {
+			color: #069 !important;
+			padding: 0;
+			background-color: #fff !important;
+			border-bottom: 1px solid #fff;
+		}
+
+		ul#menu li div a.more {
+			color: #fff;
+			font-weight: bold;
+		}
+
+		ul#menu div h3 {
+			color: #fff;
+			font-weight: bold;
+			font-size: 1.1em;
+		}
+		ul#menu div p {
+			margin: 0 0 0.8em 0;
+			padding: 0;
+		}
+		
+	
+	#content {
+		margin-top: 0.5em;
+		margin-left: 1em;
+		margin-right: 1em;
+		padding: 0em 0em 0em 0em;
+		min-height: 450px;
+		background-color: none !important;
+		background-image: url(../imgs/content-bg.png);
+		background-position: 0% -150px;
+		background-repeat: repeat-x;
+	}
+		#content p {
+			margin-bottom: 0.8em;
+		}
+		#content h2, #content h3 {
+			text-transform: uppercase;
+			margin-bottom: 0.5em;
+		}
+		#content a:link, #content a:visited {
+			border-bottom: 1px dashed #069;
+		}
+		
+		#content ul#content-nav {
+			border-left: 0.5em solid #024181;
+			border-right: 1px solid #024181;
+			border-top: 1px solid #024181;
+			border-bottom: 1px solid #024181;
+			display: block;
+			width: 14em;
+			padding: 1em;
+			list-style-type: none;
+			float: left;
+			margin-left: 1em;
+			margin-top: -0.6em;
+		}
+			#content ul#content-nav h3 {
+				text-transform: uppercase;
+				margin-bottom: 0.2em;
+			}
+			#content ul#content-nav li {
+				list-style-type: none;
+				margin-bottom:;
+			}
+				#content ul#content-nav ul {
+					margin-bottom: 0.8em;
+				}
+		
+		#content #welcome {
+			margin-right: 1.5em;
+			margin-top: 0.5em;
+			max-width: 31.5em;
+			float: right;
+			clear: none;
+		}
+		
+/*		.tweet {
+			background-image: url(../imgs/comment-nw.png);
+			background-repeat: no-repeat;
+			background-position: 100 100;
+			padding-top: 0.8em;
+		}
+		
+/*		li.tweet_first, li.tweet_even, li.tweet_odd {
+			background-color: #024181;
+			color: #fff;
+			padding: 0.8em 0.8em 0.8em 0.8em;
+			border-bottom: 0.1em solid #069;
+		}*/
+		.tweet_time a {
+			font-variant: small-caps;
+		}
+		.tweet_even, .tweet_odd {
+			margin-bottom: 0.5em;
+		}
+		
+		#content h2.front_page {
+ 			text-transform: uppercase;
+			font-size: 130%; 
+			font-weight: bold;
+			padding-top: 1.2em;
+			padding-bottom: 0.7em;
+			padding-left: 0.5em;
+			background-image: url(../imgs/underline-500px.png);
+			background-repeat: no-repeat;
+			background-position: 0% 0%;
+			color: #fff;
+		}
+		#content h2 {
+			margin-left: 0.2em;
+			margin-top: 0.2em;	
+		}
+		#content #welcome p {
+			padding-left: 0.5em;
+		}
+		
+		#secondary-nav {
+			margin-top: 0.5em;
+			float: left;
+		}
+		#secondary-nav h2 {
+			text-transform: uppercase;
+			font-size: 130%;
+			font-weight: bold;
+			margin-left: 0.4em;
+			padding-top: 1em;
+			padding-bottom: 0.5em;
+			padding-left: 1em;
+			background-color: #024181;
+			background-image: url(../imgs/secondary-nav-h2-bg.png);
+			background-repeat: no-repeat;
+			background-position: 100% 0%;
+			color: #fff;
+		} 
+
+		#primary-content {
+			padding-top: 1em;
+			margin-right: 1em;
+			margin-left: 18.5em;
+		}
+			#primary-content p {
+				margin-left: 0.8em;
+			} 
+			#primary-content h2 {
+				margin-left: 0.3em;
+				margin-top: 0.5em;
+				margin-bottom: 0.8em;		
+			} 
+			#primary-content h3 {
+				margin-left: 0.6em;
+			}
+			#primary-content h4 {
+				margin-left: 0.8em;
+			}
+		
+		
+		#secondary-content {
+			padding-top: 1.5em;
+			background-image: url(../imgs/hr-850.png);
+			background-repeat: no-repeat;
+			background-position: 50% 0%;
+		}
+		
+		#secondary-content #latest-sermon {
+			margin-left: 1.5em;
+			clear: both;
+			float: left;
+			display: block; 
+			width: 17.5em;
+			padding-right: 1em;
+		}
+		
+		#secondary-content #notices {
+			float: left;
+			display: block; 
+			width: 17.5em;
+			border-left: 1px dotted grey;
+			padding-left: 1em;
+			padding-right: 1em;
+			border-right: 1px dotted grey;
+		}
+			#secondary-content ul {
+				list-style: none outside;
+			}
+		
+		#secondary-content #this-week {
+			margin-left: 1.0em;
+			margin-right:1.5em;
+			float: left;
+			display: block; 
+			width: 17.5em;
+		}
+			#secondary-content #this-week ul {
+				list-style: none outside;
+			}
+			
+			
+		#slideshow {
+			position: relative;
+			display: block;
+			height: 250px;
+			width: 419px;
+			color: #000;
+			margin-bottom: 1.5em;
+		}
+		#slideshow div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 8;
+			opacity: 0.0;
+			width: 419px;
+			height: 250px;
+			background-color: #fff;
+		}
+		#slideshow div.active {
+			z-index: 10;
+			opacity: 1.0;
+		}
+		#slideshow div.last-active {
+			z-index: 9;
+		}
+		#slideshow div img {
+			height: 250px;
+			display: block;
+			border: 0em;
+		}
+
+		footer {
+			font-size: 0.9em;
+			background-image: url(../imgs/footer.gif);
+			background-repeat: no-repeat;
+			background-position: 50% 10%;
+			clear: both;
+			margin-top: 1em;
+			padding-top: 3em;
+			padding-left: 2.5em;
+			padding-right: 2.5em;
+		}
+		footer a:link, footer a:hover, footer a:visited {
+			border: none !important;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+			background-color: none !important;
+		}
+		footer a:hover img, footer a img {
+			border: none !important;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+			background-color: none !important;
+		}
+		
+		.vcard {
+			display: block;
+			float: right;
+			margin-bottom: 2em;
+			margin-right: 1em;
+		}
+					

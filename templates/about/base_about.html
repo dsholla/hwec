@@ -1,0 +1,50 @@
+{% extends "../base.html" %}
+
+{% block title %}Hounslow West Evangelical Church - About us...{% endblock %}
+
+{% block javascript %}{% endblock %}
+
+{% block content %}
+			<div id="secondary-nav">
+			<h2>About us...</h2>
+			<ul id="content-nav">
+				<li>
+					<h3><a href="/about/">Who, what, why?</a></h3>
+					<p>
+						Who are we?
+						What do we believe? 
+						Why do we exist?
+						Christianity in a nutshell... 
+						<!-- 2020 vision/mission statement -->
+					</p>
+				</li>
+				<li>
+					<h3><a href="/about/location/">Where, how?</a></h3>
+					<p>Where are you located? How can I get there?</p>
+				</li>
+				<li>
+					<h3><a href="/about/belonging/">Belonging to HWEC</a></h3>
+					<p>Baptism and church membership, our history...</p>
+				</li>	
+			</ul>
+			</div> <!-- #secondary-nav -->
+			
+			<div id="primary-content">
+				{% block primary-content %}
+				<h2>Who, what, why?</h3>
+				<h3>Who are we?</h3>
+				<p>Hounslow West Evangelical Church is a group of people who gather primarily to worship and serve our Lord and Saviour Jesus Christ in this area. The congregation is made up of people of all ages, and of many different backgrounds and nationalities.</p>
+				
+				<div style="float: right; display: block; margin: 0em 0.7em 0.7em 0.7em;">
+				<img src="/imgs/wild_tulip.jpg" title="A wild tulip. A theological hint?" alt="A wild tulip" style="" />
+				<blockquote><em><span style="font-size: 75%;">A wild tulip</span></em></blockquote>
+				</div>
+				<h3>What do we believe?</h3>
+				<p>Hounslow West Evangelical Church is affiliated to the <a href="http://www.fiec.org.uk/">FIEC</a>, which is a grouping of Independent  Evangelical churches. All churches affiliated to the FIEC agree its <a href="http://www.fiec.co.uk/Portals/2/FIEC%20General/Basis%20of%20Faith.pdf">basis of faith</a>, which serves as a useful summary of what we believe. It is a summary of the main teachings of Scripture on God, man, man's relationship with God, Jesus Christ and his work, ordinances and Christ's second coming at the judgment day. If the basis of faith seems to be jargon filled, <a href="../about/christianity/">Christianity in a Nutshell</a> might be a little clearer.</p>
+
+				<h3>Why do we exist?</h3>
+				<p>We exist to support one another in living and speaking for Jesus in Hounslow West and the surrounding area. We wish to follow the pattern set out in Acts 2, to be a local expression of the Church living, learning, loving, worshipping and witnessing.</p>
+				<p><a href="#">Back to top &#8224;</a></p>
+				{% endblock %}
+			</div>
+{% endblock %}

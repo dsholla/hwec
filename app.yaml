@@ -1,0 +1,30 @@
+application: hounslow-west
+version: 4
+runtime: python
+api_version: 1
+
+handlers:
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+  
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /scripts
+  static_dir: scripts
+  
+- url: /imgs
+  static_dir: imgs
+
+- url: /audio/.*
+  script: audio.py
+
+  
+- url: /admin/.*
+  script: admin.py
+  login: admin
+
+- url: /.*
+  script: main.py
+  
